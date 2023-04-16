@@ -1,0 +1,13 @@
+.bannerContainer{
+    min-height: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top: 10px solid black;
+}
+
+@media (max-width: 768px) {
+    .bannerContainer{
+        display: none;
+    }
+  }

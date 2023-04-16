@@ -1,11 +1,30 @@
-header {
+.containerHeader {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+  max-height: 100px;
   display: flex;
   flex-direction: row;
-  background-color: #fff;
   align-items: center;
   justify-content: space-between;
-  max-height: 100px;
-  padding: 5px;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 576px) {
+  .containerHeader {
+    max-height: 200px;
+    flex-direction: column;
+  }
+  .navBar {
+    padding: 0px;
+    margin-right: 10px;
+  }
+  .logo {
+    align-items: stretch;
+  }
+  li {
+    padding: 10px;
+  }
 }
 
 ul {
@@ -17,7 +36,8 @@ ul {
 }
 
 li {
-  padding: 15px;
+  padding: 5px;
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,14 +50,16 @@ li:hover {
 }
 
 .logo {
-  width: 110px;
+  max-width: 110px;
   height: auto;
   margin-top: 10px;
-  margin-left: 28px;
 }
 
 .icons {
-  width: 32px;
-  height: 31px;
+  width: 35px;
+  height: 35px;
   padding: 10px 10px 0px 10px;
+}
+.navBar {
+  margin: 0 auto;
 }

@@ -1,0 +1,24 @@
+.contenedorItem {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.productDetail {
+    flex-direction: column;
+}
+.productName {
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+.productDescription {
+    font-weight: 100;
+    text-align: justify;
+}
+.productPrice {
+    font-size: 20px;
+    text-align: center;
+}

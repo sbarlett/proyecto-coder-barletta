@@ -1,13 +1,16 @@
+html {
+  font-family: 'Bebas Neue', cursive;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #000;
 }
 
 h1 {
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 200;
   color: #000;
 }
 
@@ -16,5 +19,11 @@ a {
   text-align: center;
   color: #000;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 300;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
 }

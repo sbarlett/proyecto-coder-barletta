@@ -4,48 +4,48 @@ import styles from "./styles/navbar.module.css";
 
 export const NavBar = () => {
   return (
-    <header>
-      <span>
-        <img
-          className={styles.logo}
-          src="src/assets/logo.jpg"
-          alt="Moto logo"
-        />
-      </span>
+    <header className={styles.containerHeader}>
+      <Link to={`/`}>
+        <span>
+          <img
+            className={styles.logo}
+            src="../assets/logo.jpg"
+            alt="Moto logo"
+          />
+        </span>
+      </Link>
 
       <nav>
-        <ul>
+        <ul className={styles.navBar}>
           <li>
-            <img
-              className={styles.icons}
-              src="src/assets/Snaked.png"
-              alt="Street Logo"
-            />
-            <Link to="/street">Street</Link>
+            <Link to={`/category/3`}>
+              <img
+                className={styles.icons}
+                src="../assets/Snaked.png"
+                alt="Street Logo"
+              />
+              Street
+            </Link>
           </li>
           <li>
-            <img
-              className={styles.icons}
-              src="src/assets/deportiva.png"
-              alt="Sport Logo"
-            />
-            <Link to="/sport">Sport</Link>
+            <Link to={`/category/2`}>
+              <img
+                className={styles.icons}
+                src="../assets/deportiva.png"
+                alt="Sport Logo"
+              />
+              Sport
+            </Link>
           </li>
           <li>
-            <img
-              className={styles.icons}
-              src="src/assets/scooter.png"
-              alt="Scooter Logo"
-            />
-            <Link to="/scooter">Scooter</Link>
-          </li>
-          <li>
-            <img
-              className={styles.icons}
-              src="src/assets/cross.png"
-              alt="Motocross Logo"
-            />
-            <Link to="/motocross">Motocross</Link>
+            <Link to={`/category/1`}>
+              <img
+                className={styles.icons}
+                src="../assets/cross.png"
+                alt="Motocross Logo"
+              />
+              Motocross
+            </Link>
           </li>
         </ul>
       </nav>

@@ -1,0 +1,25 @@
+.cardProducto {
+    text-align: center;
+    min-width: 250px;
+}
+
+.cardProducto:hover {
+    border: 5px solid #dddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cardProducto img:hover {
+    opacity: 0.9;
+}
+.nameProduct {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 5px;
+}
+.priceProduct {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.781);
+    margin: 5px;
+}

@@ -12,6 +12,7 @@ const ItemDetail = ({ id, price, name, img, description, stock }) => {
 
   const handleCount = (count) => {
     setAddProducts(count);
+    setModal(true);
     const product = {
       id,
       name,
@@ -19,7 +20,6 @@ const ItemDetail = ({ id, price, name, img, description, stock }) => {
       img,
     };
     addProdCarrito(product, count);
-    setModal(true);
   };
 
   return (

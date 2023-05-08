@@ -45,3 +45,9 @@
   color: #fff;
   border-color: rgba(255, 248, 135, 0);
 }
+
+@media (max-width: 768px) {
+  .buttonShopping {
+    width: 100%;
+  }
+}

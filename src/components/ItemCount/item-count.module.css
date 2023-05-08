@@ -1,0 +1,47 @@
+.stockContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.stockDetail {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(63, 61, 61);
+}
+
+.countDetail {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  gap: 10px;
+}
+
+.countDetail span {
+  margin-right: 20px;
+}
+
+.buttonCount {
+  cursor: pointer;
+  border-color: transparent;
+  width: 27px;
+  height: 27px;
+  background-color: transparent;
+}
+
+.buttonShopping {
+  padding: 15px;
+  font-size: inherit;
+  width: 60%;
+  background: #009ddf;
+  color: #fff;
+  border: none 2px #f4ea45;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.buttonShopping:hover {
+  background: #0071e3;
+  color: #fff;
+  border-color: rgba(255, 248, 135, 0);
+}

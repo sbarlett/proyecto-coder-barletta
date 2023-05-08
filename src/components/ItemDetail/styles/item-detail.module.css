@@ -1,24 +1,64 @@
 .contenedorItem {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 .productDetail {
-    flex-direction: column;
+  display: flex;
+  flex: 1;
+  gap: 30px;
+  padding: 40px;
 }
+
+.descriptionDetail {
+  display: flex;
+  flex-direction: column;
+}
+
 .productName {
-    font-weight: 500;
-    font-size: 32px;
-    margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 0px;
 }
 .productDescription {
-    font-weight: 100;
-    text-align: justify;
+  margin-top: 10px;
+  max-width: 320px;
+  font-weight: 100;
+  text-align: justify;
+  color: #333;
+  font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
 }
 .productPrice {
-    font-size: 20px;
-    text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  color: #009fe3;
+}
+
+.imageDetail {
+  max-width: 50%;
+}
+
+.imageDetail img {
+  display: block;
+  width: 100%;
+}
+
+.lineSlim {
+  width: 100%;
+  margin: 5px;
+  color: black;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .productDetail {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

@@ -1,6 +1,14 @@
 .listContainer {
   max-width: 120rem;
   margin: 0 auto;
-  width: 90%;
-  margin-top: 20px;
+  width: 80%;
+  margin-top: 50px;
+}
+
+.questionPubliciti h1 {
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
 }

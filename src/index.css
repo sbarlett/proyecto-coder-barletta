@@ -1,5 +1,5 @@
 html {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 body {
@@ -13,6 +13,11 @@ h1 {
   font-weight: 200;
   color: #000;
 }
+h2 {
+  font-size: 25px;
+  font-weight: 200;
+  color: #000;
+}
 
 a {
   text-decoration: none;
@@ -22,8 +27,10 @@ a {
   font-weight: 300;
 }
 
-
 img {
   max-width: 100%;
   display: block;
+}
+p {
+  margin: 0;
 }

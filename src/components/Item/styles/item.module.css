@@ -1,25 +1,55 @@
 .cardProducto {
-    text-align: center;
-    min-width: 250px;
+  text-align: center;
 }
 
-.cardProducto:hover {
-    border: 5px solid #dddd;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.cardProducto img:hover {
-    opacity: 0.9;
-}
 .nameProduct {
-    font-size: 22px;
-    font-weight: 500;
-    margin: 5px;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 5px;
 }
 .priceProduct {
-    font-size: 20px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.781);
-    margin: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.781);
+  margin: 5px;
+}
+
+.productImage {
+  max-width: 190px;
+  max-height: 170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  max-height: 75px;
+}
+
+.learnDetail {
+  color: #0066cc;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.learnDetail:hover {
+  text-decoration: underline;
+}
+.description img {
+  width: 10px;
+  display: inline;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+.description {
+  width: 10px;
+  display: inline;
+  margin-left: 4px;
+  font-weight: bold;
 }

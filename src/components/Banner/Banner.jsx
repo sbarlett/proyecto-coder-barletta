@@ -1,8 +1,13 @@
-import React from 'react';
-import styles from './banner.module.css';
+import React from "react";
+import styles from "./banner.module.css";
 
 export const Banner = () => {
   return (
-    <img className={styles.bannerContainer} src="../assets/banner1.jpg" alt="Banner" />
-  )
-}
+    <section className={styles.bannerContainer}>
+      <h2>
+        <img src="../assets/airpods_logo.jpg" alt="Logo" />
+      </h2>
+      <img src="../assets/airpods.png" alt="Banner" />
+    </section>
+  );
+};

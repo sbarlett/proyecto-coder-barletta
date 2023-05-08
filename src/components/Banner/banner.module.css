@@ -1,13 +1,23 @@
-.bannerContainer{
-    min-height: 10rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-top: 10px solid black;
+.bannerContainer {
+  width: 100%;
+  max-width: 928px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.bannerContainer h2 {
+  width: 90%;
+  height: 0px;
+  margin: 0 auto;
+}
+
+.bannerContainer img:nth-child(2) {
+  margin: 0 auto;
+  max-width: 452px;
 }
 
 @media (max-width: 768px) {
-    .bannerContainer{
-        display: none;
-    }
+  .bannerContainer {
+    display: none;
   }
+}

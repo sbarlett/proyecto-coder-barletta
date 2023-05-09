@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { CarritoContext } from "../../context/CarritoContext";
 import { db } from "../../service/firebase/config";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, updateDoc, doc } from "firebase/firestore";
 import { Input } from "../Input/Input";
 import styles from "./styles/checkout.module.css";
 
@@ -59,6 +59,22 @@ const Checkout = () => {
         console.error(err);
         setError("No pudiste crear la orden");
       });
+  };
+
+  const handleStock = (id, stock, count) => {
+    if (stock > 0) {
+      const productoRef = doc(db, "products", id);
+
+      updateDoc(productoRef, {
+        stock: stock - count,
+      })
+        .then(() => {
+          console.log("Stock actualizado correctamente");
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   };
 
   return (
@@ -132,9 +148,17 @@ const Checkout = () => {
             />
           </div>
           {error && <p style={{ color: "red" }}>{error}</p>}
-          <button className={styles.buttonShop} type="submit">
-            Comprar ahora
-          </button>
+          {carrito.map((prod) => (
+            <button
+              className={styles.buttonShop}
+              type="submit"
+              onClick={() =>
+                handleStock(prod.item.id, prod.item.stock, prod.count)
+              }
+            >
+              Comprar ahora
+            </button>
+          ))}
         </form>
       </div>
       {orderId && (

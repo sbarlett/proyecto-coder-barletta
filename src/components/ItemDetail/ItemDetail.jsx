@@ -18,6 +18,7 @@ const ItemDetail = ({ id, price, name, img, description, stock }) => {
       name,
       price,
       img,
+      stock,
     };
     addProdCarrito(product, count);
   };
